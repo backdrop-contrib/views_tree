@@ -37,6 +37,7 @@ directory for complete text.
 
 ## Current Maintainers
 
+- [Herb v/d Dool](https://github.com/herbdool)
 - [Martin Jones](https://github.com/nattywebdev)
 - Seeking new maintainers
 
