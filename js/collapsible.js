@@ -1,13 +1,13 @@
 (function ($) {
 
-  Drupal.behaviors.views_tree = {
+  Backdrop.behaviors.views_tree = {
     attach: function (context, settings) {
 
-      var views_tree_settings = Drupal.settings.views_tree_setting;
+      var views_tree_settings = Backdrop.settings.views_tree_setting;
       for(var views_tree_name in views_tree_settings) {
 
         $.each( $(".view-id-"+views_tree_name+" .view-content li"), function () {
-          var count = $(this).find("li").size();
+          var count = $(this).find("li").length;
           if (count > 0) {
             $(this).addClass('views_tree_parent');
             if (views_tree_settings[views_tree_name] != "collapsed") {
@@ -24,7 +24,7 @@
 
       }
       $('.views_tree_link a', context).once('views_tree', function () {
-        $(this).click(function (e) {
+        $(this).on('click', function (e) {
           e.preventDefault();
 
           if ($(this).parent().hasClass('views_tree_link_expanded')) {
