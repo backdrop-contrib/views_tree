@@ -37,6 +37,7 @@ directory for complete text.
 
 ## Current Maintainers
 
+- [Martin Jones](https://github.com/nattywebdev)
 - Seeking new maintainers
 
 ## Credit
